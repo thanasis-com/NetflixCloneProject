@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+  font-size:50px;
+  text-align:center;
+  color:red;
+  outline:black solid medium;
+}
+
+#div1{
+  position: relative;
+  top: -50%;
+  width:50%;
+  margin : 0 auto;
+  float : left ;
+}
+
+#div2{
+  position: relative;
+  top: -50%;
+  width:50%;
+  margin : 0 auto;
+  float : left ;
+}
+
+#videos{
+  display: table;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%; 
+}
