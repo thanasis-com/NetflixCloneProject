@@ -22,7 +22,7 @@ $link=mysql_connect($hostname, $username, $password) or
 
 mysql_select_db($database,$link);
 
-$Qcheck_user="SELECT * FROM users;
+$Qcheck_user="SELECT * FROM users WHERE email='$user' AND password='$pass'";
 
 $check_user=mysql_query($Qcheck_user, $link)or
 	die("There was an error:".mysql_error());
