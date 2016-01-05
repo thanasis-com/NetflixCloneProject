@@ -32,7 +32,7 @@ $number=mysql_num_rows($check_user);
 $query="SELECT * FROM users";
 $results = mysql_query($query);
 
-echo $user;
+echo $hostname;
 echo $pass;
 
 if($number==0)
