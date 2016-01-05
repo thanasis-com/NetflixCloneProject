@@ -29,9 +29,15 @@ $check_user=mysql_query($Qcheck_user, $link)or
 
 $number=mysql_num_rows($check_user);
 
-$q = mysql_query('DESCRIBE users');
-while($row = mysql_fetch_array($q)) {
-    echo "{$row['Field']} - {$row['Type']}\n";
+$query="SELECT * FROM users";
+$results = mysql_query($query);
+
+while ($row = mysql_fetch_array($results)) {
+    echo '<tr>';
+    foreach($row as $field) {
+        echo '<td>' . htmlspecialchars($field) . '</td>';
+    }
+    echo '</tr>';
 }
 
 if($number==0)
