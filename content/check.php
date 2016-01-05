@@ -14,6 +14,7 @@ $hostname="172.17.0.3:3306";
 $database="netflixcloneproject";
 $username="root";
 $password="999999";
+echo $_POST['user'];
 $user = clean($_POST['user']);
 $pass = clean($_POST['pass']);
 
