@@ -32,6 +32,7 @@ $number=mysql_num_rows($check_user);
 if($number==0)
 {
 	echo "Wrong password or e-mail. Please try again.<br><br>";
+	printf("MySQL host info: %s\n", mysql_get_host_info());
 	echo "<a href=\"login.php\">Go back</a>";
 	exit;
 }
