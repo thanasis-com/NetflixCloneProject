@@ -14,9 +14,8 @@ $hostname="172.17.0.3:3306";
 $database="netflixcloneproject";
 $username="root";
 $password="999999";
-echo $_POST['user'];
-$user = clean($_POST['user']);
-$pass = clean($_POST['pass']);
+$user = $_POST['user'];
+$pass = $_POST['pass'];
 
 $link=mysql_connect($hostname, $username, $password) or
 	die ("An error occured while connecting to the server!" .mysql_error());
