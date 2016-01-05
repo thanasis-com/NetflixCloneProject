@@ -14,7 +14,7 @@ if(!isset($_SESSION['role']))
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <!-- #BeginEditable "doctitle" -->
-<title>Αρχική σελίδα</title>
+<title>Home</title>
 <!-- #EndEditable -->
 <link href="styles/style1.css" rel="stylesheet" type="text/css" />
 </head>
@@ -30,7 +30,7 @@ if(!isset($_SESSION['role']))
 	<!-- Begin Masthead -->
 	<div id="masthead">
 		<!-- #BeginEditable -->
-		<h1>Αρχική σελίδα</h1>
+		<h1>Home</h1>
 		<!-- #EndEditable -->
 	</div>
 	<!-- End Masthead -->
