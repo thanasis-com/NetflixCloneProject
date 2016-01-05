@@ -10,7 +10,7 @@ function clean($str) {
 		return mysql_real_escape_string($str);
 	}
 
-$hostname="40.85.96.128:3306";
+$hostname="tcp://40.85.96.128:3306";
 $database="netflixcloneproject";
 $username="root";
 $password="999999";
