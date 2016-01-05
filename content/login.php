@@ -13,9 +13,9 @@
 <div id="container">
 <div id="content">
 
-<h2>Πιστοποίηση</h2><br></br>
+<h2>Login to NetflixCloneProject</h2><br></br>
 <form action="check.php" method="post">
-	Username: <input type="text" name="user"/>
+	E-mail: <input type="text" name="user"/>
 	<br></br>
 	Password:&nbsp; <input type="password" name="pass"/>
 	<br></br>
