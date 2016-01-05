@@ -32,18 +32,10 @@ $number=mysql_num_rows($check_user);
 $query="SELECT * FROM users";
 $results = mysql_query($query);
 
-while ($row = mysql_fetch_array($results)) {
-    echo '<tr>';
-    foreach($row as $field) {
-        echo '<td>' . htmlspecialchars($field) . '</td>';
-    }
-    echo '</tr>';
-}
 
 if($number==0)
 {
 	echo "Wrong password or e-mail. Please try again.<br><br>";
-	printf("MySQL host info: %s\n", mysql_get_host_info());
 	echo "<a href=\"login.php\">Go back</a>";
 	exit;
 }
