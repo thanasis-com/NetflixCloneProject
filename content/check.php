@@ -10,28 +10,28 @@ function clean($str) {
 		return mysql_real_escape_string($str);
 	}
 
-$hostname="localhost";
-$database="ergasiaepd";
+$hostname="40.85.96.128:3306";
+$database="netflixcloneproject";
 $username="root";
-$password="";
+$password="999999";
 $user = clean($_POST['user']);
 $pass = clean($_POST['pass']);
 
 $link=mysql_connect($hostname, $username, $password) or
-	die ("Provlhma sthn sundesh me ton server" .mysql_error());
+	die ("An error occured while connecting to the server!" .mysql_error());
 
 mysql_select_db($database,$link);
 
-$Qcheck_user="SELECT * FROM user WHERE username='$user' AND password='$pass'";
+$Qcheck_user="SELECT * FROM users WHERE email='$user' AND password='$pass'";
 
 $check_user=mysql_query($Qcheck_user, $link)or
-	die("Prosoxh sthn epilogh pinaka user:".mysql_error());
+	die("There was an error:".mysql_error());
 
 $number=mysql_num_rows($check_user);
 
 if($number==0)
 {
-	echo "Provlima sth sundesh. Parakalw ksanaprospathiste.<br><br>";
+	echo "Wrong password or e-mail. Please try again.<br><br>";
 	echo "<a href=\"login.php\">Go back</a>";
 	exit;
 }
