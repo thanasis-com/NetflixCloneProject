@@ -52,13 +52,16 @@ if(!isset($_SESSION['role']))
 	<!-- Begin Content -->
 	<div id="content">
 		<!-- #BeginEditable "content" -->
-		<p><h2>Καλωσήρθατε στην ιστοσελίδα του μαθήματος Ρομποτικής.</h2><br></br>
-			Στην καρτέλα "Ανακοινώσεις" θα αναρτώνται νέα, σχετικά με το μάθημα.<br></br>
-			Στην καρτέλα "Επικοινωνία" μπορείται να βρείτε τρόπους επικοινωνίας με τον διδάσκοντα.<br></br>
-			Στην καρτέλα "Έγγραφα μαθήματος" θα αναρτώνται οι σημειώσεις των διαλέξεων.<br></br>
-			Στην καρτέλα "Εργασίες" μπορείται να βρείτε τις εργασίες του μαθήματος.</p>
+		<p>
+			<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
+	     			controls preload="none" poster='pics/bbb.png'
+				 data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+				<source src="rtmp://netflixcloneproject.cloudapp.net:1935/vod2/bbb.mp4" type='rtmp/mp4' />
+				<!--<source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />-->
+      			</video>
+		</p>
 		
-		<img alt="" height="256" src="images/robotics.gif" width="320" />
+		
 		<!-- #EndEditable "content" --></div>
 	<!-- End Content -->
 	<!-- End Container -->
