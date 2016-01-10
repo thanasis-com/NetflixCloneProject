@@ -1,3 +1,3 @@
 <?php
-$connection = new MongoClient( "mongodb://172.17.0.4" ); // connect to a remote host (default port: 27017)
+$connection = new MongoClient("mongodb://172.17.0.4"); // connect to a remote host (default port: 27017)
 ?>
