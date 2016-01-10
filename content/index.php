@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$test = new MongoClient( "mongodb://172.17.0.4" );
+
 if(!isset($_SESSION['role']))
 {
 	header("location:login.php");
