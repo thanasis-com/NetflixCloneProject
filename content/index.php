@@ -58,7 +58,7 @@ if(!isset($_SESSION['role']))
 			<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
 	     			controls preload="none" poster='pics/bbb.png'
 				 data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
-				<source src="rtmp://fabubi.cloudapp.net:1935/vod2/scuba.mp4" type='rtmp/mp4' />
+				<source src="rtmp://http://netflixcloneproject.cloudapp.net:1935/vod2/scuba.mp4" type='rtmp/mp4' />
 				<!--<source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />-->
       			</video>
 		</p>
