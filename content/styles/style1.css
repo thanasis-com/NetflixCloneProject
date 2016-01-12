@@ -71,6 +71,7 @@ body {
 }
 #navigation a {
 	color: #000;
+	font-size: 14px;
 	text-decoration: none;
 	display: block;
 	padding: 5px;
