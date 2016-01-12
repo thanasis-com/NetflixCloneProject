@@ -78,11 +78,10 @@ body {
 	background-color: #fff;
 }
 #navigation a:hover {
-	color: #369;
-	font-size: 17px;
+	color: #000;
 	text-decoration: none;
 	border: 1px solid #fff;
-	background-color: #fff;
+	background-color: #6599cd;
 }
 /* Content Styles */
 #content h1,h2,h3,h4,h5,h6 {
