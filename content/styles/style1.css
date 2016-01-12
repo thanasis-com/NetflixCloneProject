@@ -79,9 +79,10 @@ body {
 }
 #navigation a:hover {
 	color: #369;
+	font-size: 10px;
 	text-decoration: none;
-	border: 1px solid #964;
-	background-color: #964;
+	border: 1px solid #fff;
+	background-color: #fff;
 }
 /* Content Styles */
 #content h1,h2,h3,h4,h5,h6 {
