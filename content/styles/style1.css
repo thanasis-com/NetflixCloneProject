@@ -66,7 +66,7 @@ body {
 	display: block;
 	margin: 0;
 	padding: 0;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	background-color: #fff;
 }
 #navigation a {
@@ -74,7 +74,7 @@ body {
 	text-decoration: none;
 	display: block;
 	padding: 5px;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	background-color: #fff;
 }
 #navigation a:hover {
