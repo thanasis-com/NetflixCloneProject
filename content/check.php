@@ -35,9 +35,7 @@ $results = mysql_query($query);
 
 if($number==0)
 {
-	echo "Wrong password or e-mail. Please try again.<br><br>";
-	echo "<a href=\"login.php\">Go back</a>";
-	exit;
+	header("location:login.php");
 }
 else
 {
