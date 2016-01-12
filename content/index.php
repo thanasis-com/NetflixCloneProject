@@ -17,7 +17,8 @@ if(!isset($_SESSION['role']))
 <title>Home</title>
 <!-- #EndEditable -->
 <link href="styles/style1.css" rel="stylesheet" type="text/css" />
-
+<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.11/video.js"></script>
 </head>
 
 <body>
