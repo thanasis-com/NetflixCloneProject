@@ -127,4 +127,10 @@ a:hover {
 #center{
 	 text-align: center;
 }
+
+#welcome{
+	font-size:14px;
+	font-style:bold;
+	text-align:center;
+}
 }
