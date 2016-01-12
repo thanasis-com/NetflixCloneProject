@@ -26,7 +26,7 @@ body {
 	width: 148px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border: 3px solid #431;
+	border: 1px solid #431;
 	background-color: #fff;
 }
 #content {
@@ -65,7 +65,7 @@ body {
 #navigation li {
 	display: block;
 	margin: 0;
-	padding: 0;
+	padding: 3px;
 	border: 1px solid #fff;
 	background-color: #fff;
 }
