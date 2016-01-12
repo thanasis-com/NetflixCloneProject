@@ -12,6 +12,7 @@
 
 <div id="container">
 <div id="content">
+<div id="center">
 
 <h2>Login to NetflixCloneProject</h2><br></br>
 <form action="check.php" method="post">
@@ -19,10 +20,11 @@
 	<br></br>
 	Password:&nbsp; <input type="password" name="pass"/>
 	<br></br>
-	<div id="button">
+	
 	<input type="submit" name="login" value="Login"/>
-	</div>
+	
 </form>
+</div>
 </div>
 </div>
 </body>
