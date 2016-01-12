@@ -121,3 +121,8 @@ a:hover {
 .style_italic {
 	font-style: italic;
 }
+
+#button{
+	 text-align: center;
+}
+}
