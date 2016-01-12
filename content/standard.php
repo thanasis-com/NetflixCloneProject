@@ -47,7 +47,7 @@ if(!isset($_SESSION['role']))
 	<!-- Begin Content -->
 	<div id="content">
 		<!-- #BeginEditable "content" -->
-		
+		<?php include 'fetchstandard.php'; ?>
 		
 		<!-- #EndEditable "content" --></div>
 	<!-- End Content -->
