@@ -47,7 +47,7 @@ if(!isset($_SESSION['role']))
 	<!-- Begin Content -->
 	<div id="content">
 		<!-- #BeginEditable "content" -->
-		
+		<?php include 'fetchprime.php'; ?>
 		
 		<!-- #EndEditable "content" --></div>
 	<!-- End Content -->
