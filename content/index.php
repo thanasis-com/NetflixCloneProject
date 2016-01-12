@@ -39,11 +39,9 @@ if(!isset($_SESSION['role']))
 	<!-- Begin Navigation -->
 	<div id="navigation">
 		<ul>
-			<li><a href="index.php">Αρχική σελίδα</a></li>
-			<li><a href="announcement.php">Ανακοινώσεις</a></li>
-			<li><a href="communication.php">Επικοινωνία</a></li>
-			<li><a href="documents.php">Έγγραφα μαθήματος</a></li>
-			<li><a href="homework.php">Εργασίες</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="announcement.php">Standard videos</a></li>
+			<li><a href="communication.php">Prime videos</a></li>
 		</ul>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
