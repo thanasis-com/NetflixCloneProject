@@ -43,10 +43,6 @@ if(!isset($_SESSION['role']))
 			<li><a href="announcement.php">Standard videos</a></li>
 			<li><a href="communication.php">Prime videos</a></li>
 		</ul>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
 	</div>
 	<!-- End Navigation -->
 	<!-- Begin Content -->
