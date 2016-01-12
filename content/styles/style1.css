@@ -8,12 +8,12 @@ body {
 	background-attachment: scroll;
 }
 #container {
-	width: 600px;
+	width: 900px;
 	margin: 10px auto;
 }
 #masthead {
 	text-align: center;
-	width: 698px;
+	width: 900px;
 	border: 1px solid #431;
 	background-color: #fff;
 	background-image: url("../images/masthead.gif");
