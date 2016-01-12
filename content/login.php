@@ -19,8 +19,9 @@
 	<br></br>
 	Password:&nbsp; <input type="password" name="pass"/>
 	<br></br>
+	<div id="button">
 	<input type="submit" name="login" value="Login"/>
-	
+	</div>
 </form>
 </div>
 </div>
