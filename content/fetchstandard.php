@@ -13,7 +13,7 @@ $cursor = $collection->find();
 
 foreach ($cursor as $document) {
       echo '<p>'.$document["title"].'</p>'.'<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none" data-setup="{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }"> <source src="rtmp://netflixcloneproject.cloudapp.net:1935/vod2/bbb.mp4" type="rtmp/mp4" /></video>'.'<p>Description: '.$document["description"].'</p>'.'<p>Genre: '.$document["genre"].'</p>';
-      
+      echo '<video width="320" height="240" controls><source src="rtmp://netflixcloneproject.cloudapp.net:1935/vod2/bbb.mp4" type="rtmp/mp4"></video>';
    }
 
 ?>
