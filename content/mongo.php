@@ -1,5 +1,5 @@
 <?php
-$connection = new Mongo("mongodb://172.17.0.1");
+$connection = new Mongo("mongodb://172.17.0.2");
 echo "Connection to database successfully";
 $db = $connection->CATALOGUE;
 echo "Database mydb selected";
