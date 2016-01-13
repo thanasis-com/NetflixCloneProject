@@ -18,6 +18,7 @@ if(!isset($_SESSION['role']))
 <link href="styles/style1.css" rel="stylesheet" type="text/css" />
 <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/4.11/video.js"></script>
+<script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
 </head>
 
 <body>
