@@ -22,7 +22,9 @@ if(!isset($_SESSION['role']))
 
 <body>
 <!-- #BeginEditable -->
-
+<video height="400" width="600" id="popvideo" controls>
+      <source src="rtmp://netflixcloneproject.cloudapp.net:1935/vod2/bbb.mp4">
+      </video>
 <!-- #EndEditable -->
 
 <!-- Begin Container -->
