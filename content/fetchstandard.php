@@ -12,7 +12,7 @@ $collection = $db->movies;
 $cursor = $collection->find();
 
 foreach ($cursor as $document) {
-      echo '<p>'.$document["title"].'</p>'.'<p>Description: '.$document["description"].'</p>'.'<p>Genre: '.$document["genre"].'</p>'
+      echo '<p>'.$document["title"].'</p>'.'<p>Description: '.$document["description"].'</p>'.'<p>Genre: '.$document["genre"].'</p>';
       
    }
 
