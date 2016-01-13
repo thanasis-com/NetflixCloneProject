@@ -8,7 +8,7 @@ $cursor = $collection->find();
 foreach ($cursor as $document) {
       echo $document["title"] . "\n"."\n";
       echo "Description: ".$document["description"]."\n";
-      echo "Genre: ".$document["genre"]
+      echo "Genre: ".$document["genre"];
    }
 
 ?>
