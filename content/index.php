@@ -40,9 +40,11 @@ if(!isset($_SESSION['role']))
 	<div id="navigation">
 		<ul>
 			<li><a href="index.php">Home</a></li>
+			<ul>
 			<li><a href="animated.php">Animated videos</a></li>
 			<li><a href="documentaries.php">Documentaries</a></li>
 			<li><a href="music.php">Music videos</a></li>
+			</ul>
 		</ul>
 	</div>
 	<!-- End Navigation -->
