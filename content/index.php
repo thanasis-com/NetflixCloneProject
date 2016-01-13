@@ -49,12 +49,7 @@ if(!isset($_SESSION['role']))
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="welcome">
-		<p>
-			Welcome to NetflixCloneProject!
-		</p>
-		<p>
-			Use the navigation panel at the left to watch videos depending on your subscription. Enjoy!
-		</p>
+		<?php include 'fetchvideos.php'; ?>
 		</div>
 		
 		<!-- #EndEditable "content" --></div>
