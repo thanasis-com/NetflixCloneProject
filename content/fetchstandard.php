@@ -10,6 +10,8 @@ $db = $connection->CATALOGUE;
 $collection = $db->movies;
 $cursor = $collection->find();
 
+echo "Random words";
+
 foreach ($cursor as $document) {
       echo $document["title"] . "\n"."\n";
       echo "Description: ".$document["description"]."\n";
