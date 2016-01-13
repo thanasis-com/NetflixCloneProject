@@ -18,28 +18,11 @@ if(!isset($_SESSION['role']))
 <link href="styles/style1.css" rel="stylesheet" type="text/css" />
 <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/4.11/video.js"></script>
-<script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
-<script>
-      // ensure the web page (DOM) has loaded
-      document.addEventListener("DOMContentLoaded", function () {
-         // Create a popcorn instance by calling Popcorn("#id-of-my-video")
-         var pop = Popcorn("#popvideo",
-         {
-         title:"video"
-         });
-         var pop1= Popcorn("#pop1video");
-        
-         // play the video right away
-         //pop.play();
-      }, false);
-    </script>
 </head>
 
 <body>
 <!-- #BeginEditable -->
-<video height="400" width="600" id="popvideo" controls>
-      <source src="rtmp://netflixcloneproject.cloudapp.net:1935/vod2/bbb.mp4">
-      </video>
+
 <!-- #EndEditable -->
 
 <!-- Begin Container -->
