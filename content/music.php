@@ -49,7 +49,9 @@ if(!isset($_SESSION['role']))
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="welcome">
-		
+		<?php include 'fetchsomevideos.php';
+			fetchsome("music");
+		?>
 		</div>
 		
 		<!-- #EndEditable "content" --></div>
