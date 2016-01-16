@@ -128,7 +128,7 @@ a:hover {
 	 text-align: center;
 }
 
-#videos title {
+#videos .title {
 	font-size:20px;
 	font-weight:bold;
 }
