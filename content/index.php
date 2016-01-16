@@ -44,9 +44,8 @@ if(!isset($_SESSION['role']))
 			<li><a href="documentaries.php">Documentaries</a></li>
 			<li><a href="music.php">Music videos</a></li>
 		</ul>
-	</div>
-	<div id="navigation">
-	sssssss	
+	<hr>
+	sss
 	</div>
 	<!-- End Navigation -->
 	<!-- Begin Content -->
