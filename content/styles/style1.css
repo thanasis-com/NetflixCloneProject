@@ -85,6 +85,17 @@ body {
 	border: 1px solid #fff;
 	background-color: #8cb2d9;
 }
+
+#navigation .label{
+	font-size:16px;
+	font-weight:bold;
+}
+
+#navigation p {
+	text-align: center;
+}
+
+
 /* Content Styles */
 #content h1,h2,h3,h4,h5,h6 {
 	color: #000;
