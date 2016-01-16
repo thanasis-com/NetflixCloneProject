@@ -128,8 +128,15 @@ a:hover {
 	 text-align: center;
 }
 
+#videos title {
+	font-size:20px;
+	font-weight:bold;
+}
+
 #videos p {
 	font-size:14px;
 	text-align:left;
 }
+
+
 }
