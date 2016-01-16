@@ -43,6 +43,8 @@ if(!isset($_SESSION['role']))
 			<li><a href="documentaries.php">Documentaries</a></li>
 			<li><a href="music.php">Music videos</a></li>
 		</ul>
+	<hr>
+	<?php include 'logininfo.php'; ?>
 	</div>
 	<!-- End Navigation -->
 	<!-- Begin Content -->
