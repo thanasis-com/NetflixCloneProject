@@ -92,7 +92,7 @@ body {
 	text-align: center;
 }
 
-#navigation p {
+#navigation .navicontent {
 	text-align: center;
 	font-size:16px;
 }
