@@ -144,5 +144,9 @@ a:hover {
 	text-align:left;
 }
 
+#videos video {
+	display: block;
+	margin: 0 auto;
+}
 
 }
