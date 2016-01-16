@@ -133,9 +133,15 @@ a:hover {
 	font-weight:bold;
 }
 
+#videos .label {
+	font-size:16px;
+	font-weight:bold;
+}
+
 #videos p {
-	font-size:14px;
+	font-size:15px;
 	text-align:left;
+	font-weight:italic;
 }
 
 
