@@ -45,7 +45,7 @@ if(!isset($_SESSION['role']))
 			<li><a href="music.php">Music videos</a></li>
 		</ul>
 	<hr>
-	sss
+	<?php include 'logininfo.php'; ?>
 	</div>
 	<!-- End Navigation -->
 	<!-- Begin Content -->
