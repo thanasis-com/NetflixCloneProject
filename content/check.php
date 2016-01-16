@@ -44,6 +44,9 @@ else
 	$role=$user["role"];
 	
 	$_SESSION['role'] = $user['role'];
+	$_SESSION['email'] = $user['email']
+	$_SESSION['name'] = $user['name']
+	$_SESSION['surname'] = $user['surname']
 	
 	header("Location:index.php");
 }
