@@ -18,6 +18,7 @@
 <form action="check.php" method="post">
 	E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="user"/>
 	<br></br>
+	
 	Password:&nbsp; <input type="password" name="pass"/>
 	<br></br>
 	
