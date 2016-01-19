@@ -1,0 +1,91 @@
+{
+    "name": "jumph-io/jumph",
+    "license": "MIT",
+    "type": "project",
+    "description": "Jumph is a project management tool",
+    "homepage": "http://jumph.github.io",
+    "authors": [
+        {
+            "name": "Peter Nijssen",
+            "homepage": "https://www.peternijssen.nl"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require-dev": {
+    "squizlabs/php_codesniffer": "~1.5.*",
+    "phpmd/phpmd": "~2.1.*",
+    "sebastian/phpcpd": "~2.0.*",
+    "pdepend/pdepend": "~2.0.*",
+    "phploc/phploc": "~2.0.*",
+    "phpunit/phpunit": "~4.3.*",
+    "theseer/phpdox": "~0.7.*",
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.3.*",
+        "doctrine/orm": "2.4.*",
+        "doctrine/doctrine-bundle": "1.2.*",
+        "twig/extensions": "1.1.*",
+        "symfony/assetic-bundle": "2.3.*",
+        "symfony/swiftmailer-bundle": "2.3.*",
+        "symfony/monolog-bundle": "2.6.*",
+        "sensio/distribution-bundle": "2.3.*",
+        "sensio/framework-extra-bundle": "2.3.*",
+        "sensio/generator-bundle": "2.3.*",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "stof/doctrine-extensions-bundle": "1.1.*",
+        "friendsofsymfony/user-bundle": "2.0.*@dev",
+        "knplabs/knp-menu": "2.0.*",
+        "knplabs/knp-menu-bundle": "2.0.*",
+        "knplabs/knp-paginator-bundle": "2.4.*",
+        "lexik/form-filter-bundle": "2.0.*"
+    },
+    "require-dev": {
+        "webfactory/exceptions-bundle": "4.0.*",
+        "squizlabs/php_codesniffer": "1.5.*",
+        "phpmd/phpmd": "2.1.*",
+        "sebastian/phpcpd": "2.0.*",
+        "pdepend/pdepend": "2.0.*",
+        "phploc/phploc": "2.0.*",
+        "phpunit/phpunit": "4.3.*",
+        "theseer/phpdox": "0.7.*",
+        "satooshi/php-coveralls": "0.7.*@dev",
+        "mockery/mockery": "0.9.*",
+        "liip/functional-test-bundle": "1.0.*",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "doctrine/data-fixtures": "dev-master",
+        "fzaninotto/faker": "1.4.*"
+
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin",
+        "process-timeout": 3000
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    }
+}
