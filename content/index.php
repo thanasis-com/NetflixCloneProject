@@ -23,8 +23,7 @@ if(!isset($_SESSION['role']))
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
 function like() {
-    $.post("like.php");
-    return false;
+    window.alert(5 + 6);
 }
 </script>
 </head>
