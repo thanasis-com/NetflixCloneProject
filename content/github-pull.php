@@ -22,7 +22,7 @@ $CONTENT_REPO       = "{$LOCAL_REPO}/content";
 $REMOTE_REPO        = "git@github.com:thanasis-com/NetflixCloneProject.git";
 $BRANCH             = "master";
 
-if ( $_POST['payload'] ) {
+if (true) {
   // Only respond to POST requests from Github
 
   if( file_exists($LOCAL_REPO) ) {
