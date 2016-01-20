@@ -52,6 +52,7 @@ function like() {
 			<li><a href="documentaries.php">Documentaries</a></li>
 			<li><a href="music.php">Music videos</a></li>
 		</ul>
+		<p><input type="image" src="/img/likebutton.png" onclick="like();" /></p>
 	<hr>
 	<?php include 'logininfo.php'; ?>
 	</div>
