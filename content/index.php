@@ -24,7 +24,7 @@ if(!isset($_SESSION['role']))
 <script type="text/javascript">
 function like(value) {
     $.post("like.php", {id:2});
-    return false;
+    
 }
 </script>
 </head>
