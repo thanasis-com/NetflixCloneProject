@@ -15,7 +15,8 @@ $newdata = array('$inc'=>array("likes"=>1));
 
 $collection->update(
             $criteria,
-            $newdata
+            $newdata,
+            array('multiple'=>true, 'safe'=>true)
           );
 
 ?>
