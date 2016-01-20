@@ -18,7 +18,7 @@
 $LOCAL_ROOT         = "/home";
 $LOCAL_REPO_NAME    = "NetflixCloneProject";
 $LOCAL_REPO         = "{$LOCAL_ROOT}/{$LOCAL_REPO_NAME}";
-$CONTENT_REPO       = "{$LOCAL_REPO}/content";
+$CONTENT_REPO       = "{$LOCAL_REPO}/content/";
 $REMOTE_REPO        = "git@github.com:thanasis-com/NetflixCloneProject.git";
 $BRANCH             = "master";
 
