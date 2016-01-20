@@ -20,8 +20,8 @@ if(!isset($_SESSION['role']))
 <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
-function like() {
-    $.post('like.php', {id:1})
+function like(value) {
+    $.post("like.php", {id:value});
     location.reload();
     return false;
 }
