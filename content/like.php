@@ -5,14 +5,14 @@ if(!isset($_SESSION['role']))
 	header("location:login.php");
 	}
 
-$id = $_POST['id'];
-echo $id;
+//$id = $_POST['id'];
+if(isset($_POST['id'])){
 
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
 
-$criteria = array("_id"=>$id);
+$criteria = array("_id"=>1);
 $newdata = array('$inc'=>array("likes"=>1));
 
 $collection->update(
@@ -20,5 +20,5 @@ $collection->update(
             $newdata,
             array('multiple'=>true, 'safe'=>true)
           );
-
+}
 ?>
