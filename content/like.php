@@ -4,6 +4,9 @@ if(!isset($_SESSION['role']))
 {
 	header("location:login.php");
 	}
+ini_set('display_errors', 1);
+
+error_reporting(E_ALL);
 
 $id = $_POST['id'];
 
