@@ -29,14 +29,14 @@ if ( $_POST['payload'] ) {
 
     // If there is already a repo, just run a git pull to grab the latest changes
     shell_exec("cd {$LOCAL_REPO} && git pull");
-    shell_exec("cp -a {$CONTENT_REPO}. /var/www/")
+    shell_exec("cp -a {$CONTENT_REPO}. /var/www/");
 
     die("done " . mktime());
   } else {
 
     // If the repo does not exist, then clone it into the parent directory
     shell_exec("cd {$LOCAL_ROOT} && git clone {$REMOTE_REPO}");
-    shell_exec("cp -a {$CONTENT_REPO}. /var/www/")
+    shell_exec("cp -a {$CONTENT_REPO}. /var/www/");
 
     die("done " . mktime());
   }
