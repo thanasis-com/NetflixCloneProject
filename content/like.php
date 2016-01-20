@@ -19,5 +19,5 @@ $collection->update(
             $newdata,
             array('multiple'=>true, 'safe'=>true)
           );
-}
+
 ?>
