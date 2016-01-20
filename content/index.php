@@ -23,7 +23,7 @@ if(!isset($_SESSION['role']))
 <script type="text/javascript">
 function like() {
     $.get("like.php");
-    
+    return false;
 }
 </script>
 </head>
