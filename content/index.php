@@ -22,32 +22,10 @@ if(!isset($_SESSION['role']))
 <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function()
-    {
-        $("#likebutton").click(function() {
-
-          alert($(this).attr("value"));
-
-                /* get some values from elements on the page: */
-               var buttonvalue = $(this).val(); 
-
-              /* Send the data using post and put the results in a div */
-                $.ajax({
-                  url: "like.php",
-                  type: "post",
-                  data: buttonvalue,
-                  success: function(data){
-                      alert("success");
-                              alert(data);
-                       $("#result").html('submitted successfully');
-                  },
-                  error:function(){
-                  alert("failure");
-                  $("#result").html('there is error while submit');
-                    }   
-            }); 
-        });
-    });    
+function like(value) {
+    $.get("like.php", {id:'value'});
+    return false;
+}
 </script>
 </head>
 
