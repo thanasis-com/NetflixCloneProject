@@ -32,7 +32,7 @@ if(!isset($_SESSION['role']))
 	<!-- Begin Masthead -->
 	<div id="masthead">
 		<!-- #BeginEditable -->
-		<h1>Home</h1>
+		<h1>Fuck yeah</h1>
 		<!-- #EndEditable -->
 	</div>
 	<!-- End Masthead -->
