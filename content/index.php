@@ -19,7 +19,7 @@ if(!isset($_SESSION['role']))
 <link href="styles/style1.css" rel="stylesheet" type="text/css" />
 <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/4.11/video.js"></script>
-<script type="text/javascript" src="jquery.min.js"></script>
+<script src="jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
 function like() {
     $.get("like.php");
