@@ -6,7 +6,7 @@ if(!isset($_SESSION['role']))
 	}
 
 //$id = $_POST['id'];
-if(isset($_POST['id'])){
+if(isset($_POST['ids'])){
 
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
