@@ -24,6 +24,7 @@ if(!isset($_SESSION['role']))
 <script type="text/javascript">
 function like() {
     $.get("like.php");
+    location.reload();
     return false;
 }
 </script>
