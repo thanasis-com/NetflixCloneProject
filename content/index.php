@@ -12,13 +12,6 @@ if(!isset($_SESSION['role']))
 <!-- #BeginTemplate "master.dwt" -->
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<!-- #BeginEditable "doctitle" -->
-<title>Home</title>
-<!-- #EndEditable -->
-<link href="styles/style1.css" rel="stylesheet" type="text/css" />
-<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
-<script src="http://vjs.zencdn.net/4.11/video.js"></script>
 <script src="jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
 function like() {
@@ -26,6 +19,14 @@ function like() {
     return false;
 }
 </script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>Home</title>
+<!-- #EndEditable -->
+<link href="styles/style1.css" rel="stylesheet" type="text/css" />
+<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.11/video.js"></script>
+
 </head>
 
 <body>
