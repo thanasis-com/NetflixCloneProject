@@ -12,14 +12,14 @@ $db = $connection->CATALOGUE;
 $collection = $db->movies;
 $criteria = array("_id"=>$id);
 $cursor = $collection->find($criteria);
-
+echo 'fine1';
 $title=$cursor["title"];
 $moviegenre=$cursor["genre"];
-
+echo 'fine2';
 $cursor2 = $collection->find();
 
-$message='Hello '.$_SESSION["name"].',\n\n'.'We noticed you liked '.$title.'. \n We have more videos like this: \n';
-
+$message='Hello '.$_SESSION["name"].',\n\n We noticed you liked '.$title.'. \n We have more videos like this: \n';
+echo 'fine3';
 $sendflag=false;
 foreach ($cursor2 as $document) {
   if($moviegenre==$document['genre']){
@@ -27,7 +27,7 @@ foreach ($cursor2 as $document) {
   $message.=$document["title"].'\n';
   }
 }
-
+echo 'fine4';
 if(sendflag){
 mail ($_SESSION['email'],"Videos you may like!",$message,"From:netflixclone@project.com");
 }
