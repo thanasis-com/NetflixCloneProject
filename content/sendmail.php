@@ -25,7 +25,7 @@ $message="Hello ".$_SESSION['name'].",\n\n We noticed that you liked ".$title.".
 
 $sendflag=false;
 foreach ($cursor2 as $document) {
-  if($moviegenre==$document['genre']){
+  if($moviegenre==$document['genre'] && $id!=$document['_id']){
   $sendflag=true;
   $message.=$document['title']."\n";
   }
