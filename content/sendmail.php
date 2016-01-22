@@ -21,13 +21,13 @@ foreach ($cursor as $document) {
 
 $cursor2 = $collection->find();
 
-$message='Hello '.$_SESSION["name"].',\r\n\n We noticed you liked '.$title.'. \n We have more videos like this: \n';
+$message="Hello ".$_SESSION['name'].",\n\n We noticed you liked ".$title.". \n We have more videos like this: \n";
 
 $sendflag=false;
 foreach ($cursor2 as $document) {
   if($moviegenre==$document['genre']){
   $sendflag=true;
-  $message.=$document["title"].'\n';
+  $message.=$document['title']."\n";
   }
 }
 
