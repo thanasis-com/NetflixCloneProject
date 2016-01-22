@@ -13,9 +13,11 @@ $collection = $db->movies;
 $criteria = array("_id"=>$id);
 $cursor = $collection->find($criteria);
 echo 'fine1';
-$title=$cursor["title"];
-echo 'fine1.5';
-$moviegenre=$cursor["genre"];
+foreach ($cursor as $document) {
+	$title=$document["title"];
+	echo 'fine1.5';
+	$moviegenre=$document["genre"];
+}
 echo 'fine2';
 $cursor2 = $collection->find();
 
