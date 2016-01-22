@@ -13,18 +13,18 @@ $collection = $db->movies;
 $criteria = array("_id"=>$id);
 $cursor = $collection->find($criteria);
 
-$title=$cursor['title'];
-$moviegenre=$cursor['genre'];
+$title=$cursor["title"];
+$moviegenre=$cursor["genre"];
 
-$cursor = $collection->find();
+$cursor2 = $collection->find();
 
-$message='Hello '.$_SESSION['name'].',\n\n'.'We noticed you liked '.$title.'. \n We have more videos like this: \n';
+$message='Hello '.$_SESSION["name"].',\n\n'.'We noticed you liked '.$title.'. \n We have more videos like this: \n';
 
 $sendflag=false;
-foreach ($cursor as $document) {
+foreach ($cursor2 as $document) {
   if($moviegenre==$document['genre']){
   $sendflag=true;
-  $message.=$document.'\n';
+  $message.=$document["title"].'\n';
   }
 }
 
