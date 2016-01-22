@@ -25,6 +25,10 @@ function like(value) {
     location.reload();
     return false;
 }
+function sendmail(value){
+	$.post("sendmail.php", {id:value});
+	return false;
+}
 function logout(){
 	$.post("logout.php");
 	return false;
