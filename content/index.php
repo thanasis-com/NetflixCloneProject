@@ -27,6 +27,10 @@ function like(value) {
     location.reload();
     return false;
 }
+function logout(){
+	$.post("logout.php");
+	return false;
+}
 </script>
 </head>
 
