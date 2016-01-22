@@ -14,6 +14,7 @@ $criteria = array("_id"=>$id);
 $cursor = $collection->find($criteria);
 echo 'fine1';
 $title=$cursor["title"];
+echo 'fine1.5';
 $moviegenre=$cursor["genre"];
 echo 'fine2';
 $cursor2 = $collection->find();
