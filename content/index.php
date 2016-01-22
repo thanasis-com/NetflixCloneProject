@@ -23,10 +23,13 @@ if(!isset($_SESSION['role']))
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
 function like(value) {
-    $.post("sendmail.php", {id:value});
     $.post("like.php", {id:value});
     location.reload();
     return false;
+}
+function sendmail(value){
+	$.post("sendmail.php", {id:value});
+	return false;
 }
 function logout(){
 	$.post("logout.php");
