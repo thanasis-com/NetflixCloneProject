@@ -4,5 +4,7 @@ if(!isset($_SESSION['role']))
 {
 	header("location:login.php");
 	}
-echo 'success';	
+
+unset($_SESSION['role']);
+
 ?>
