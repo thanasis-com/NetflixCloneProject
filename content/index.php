@@ -29,7 +29,7 @@ function like(value) {
 }
 function logout(){
 	$.post("logout.php");
-	return false;
+	
 }
 </script>
 </head>
