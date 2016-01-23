@@ -3,7 +3,7 @@
 $name=$_POST['name'];
 $surname=$_POST['surname'];
 $email=$_POST['email'];
-$pass=md5($_POST['password']);
+$pass=$_POST['password'];
 $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
