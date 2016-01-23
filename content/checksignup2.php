@@ -38,5 +38,5 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-header("Location:login.php");
+//header("Location:login.php");
 ?>
