@@ -8,12 +8,12 @@ $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
 
-$hostname="172.17.0.2:3306";
+$hostname="172.17.0.2";
 $database="netflixcloneproject";
 $username="root";
 $password="999999";
 
-$conn = new mysqli($hostname, $username, $password, $database);
+$conn = new mysqli($hostname, $username, $password, $database, 3306);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
