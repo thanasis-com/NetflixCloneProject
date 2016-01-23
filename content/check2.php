@@ -19,19 +19,19 @@ $conn = new mysqli($hostname, $username, $password, $database, 3306);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
+echo '1';
 
 $sql="SELECT * FROM users WHERE email=:user AND password=:pass";
-
+echo '2';
 $stmt = $conn->prepare($sql);
 $stmt->execute(array(
     ":user" => $user,
     ":pass" => $pass
 ));
-
+echo '3';
 $row = $stmt->fetch();
 
-
+echo '4';
 if(mysql_num_rows($row)==0)
 {
 	header("location:login.php");
