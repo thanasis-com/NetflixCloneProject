@@ -16,7 +16,7 @@ $username="root";
 $password="999999";
 $user = $_POST['user'];
 $pass = $_POST['pass'];
-$pass=md5($pass);
+
 
 $link=mysql_connect($hostname, $username, $password) or
 	die ("An error occured while connecting to the server!" .mysql_error());
