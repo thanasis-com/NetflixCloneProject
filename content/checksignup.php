@@ -3,7 +3,7 @@
 $name=$_POST['name'];
 $surname=$_POST['surname'];
 $email=$_POST['email'];
-$pass=$_POST['password'];
+$pass=hash('sha512',$_POST['password']);
 $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
