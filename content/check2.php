@@ -8,21 +8,22 @@ function clean($str) {
 		return mysql_real_escape_string($str);
 	}
 	
-$hostname="172.17.0.2:3306";
+$hostname="172.17.0.2";
 $database="netflixcloneproject";
 $username="root";
 $password="999999";
 $user = $_POST['user'];
 $pass = $_POST['pass'];
 
-$link=mysql_connect($hostname, $username, $password) or
-	die ("An error occured while connecting to the server!" .mysql_error());
-	
+$conn = new mysqli($hostname, $username, $password, $database, 3306);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
 
 $sql="SELECT * FROM users WHERE email=:user AND password=:pass";
 
-$stmt = mysql_select_db($database,$link)->prepare($sql);
+$stmt = $conn->prepare($sql);
 $stmt->execute(array(
     ":user" => $user,
     ":pass" => $pass
