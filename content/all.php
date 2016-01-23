@@ -49,7 +49,7 @@ function logout(){
 	<!-- Begin Masthead -->
 	<div id="masthead">
 		<!-- #BeginEditable -->
-		<h1>Home</h1>
+		<h1>All videos</h1>
 		<!-- #EndEditable -->
 	</div>
 	<!-- End Masthead -->
