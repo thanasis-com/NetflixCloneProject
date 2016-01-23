@@ -36,6 +36,7 @@
 	
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="pass"/>
 	<br></br>
+	<br></br>
 	
 	<input type="submit" name="signup" value="Sign up"/>
 	<br></br>
