@@ -3,11 +3,11 @@
 $name=$_POST['name'];
 $surname=$_POST['surname'];
 $email=$_POST['email'];
-$pass=$_POST['password'];
+$pass=$_POST['pass'];
 $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
-echo 'password: '.$_POST['password'];
+
 $hostname="172.17.0.2";
 $database="netflixcloneproject";
 $username="root";
