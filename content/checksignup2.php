@@ -23,7 +23,7 @@ $salt = strtr(base64_encode(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)), '+', '.')
 $salt = sprintf("$2a$%02d$", $cost) . $salt;
 
 // Hash the password with the salt
-$hash = crypt($password, $salt);
+$hash = crypt($pass, $salt);
 
 $conn = new mysqli($hostname, $username, $password, $database, 3306);
 if ($conn->connect_error) {
