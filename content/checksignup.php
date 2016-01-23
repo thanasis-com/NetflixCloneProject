@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 } 
 
 
-$sql = "INSERT INTO users (name, surname, email, password, age, country, role)
+$sql = "INSERT INTO users (name, surname, email, phrase, age, country, role)
 VALUES ('$name', '$surname', '$email', '$pass', '$age', '$country', '$role')";
 
 if ($conn->query($sql) === TRUE) {
