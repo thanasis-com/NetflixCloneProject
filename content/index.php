@@ -69,7 +69,7 @@ function logout(){
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="videos">
-		<?php include 'fetchvideos.php'; ?>
+		<?php include 'welcomecontent.php'; ?>
 		</div>
 		
 		<!-- #EndEditable "content" --></div>
