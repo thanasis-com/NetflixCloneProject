@@ -23,6 +23,8 @@
 	<br></br>
 	
 	<input type="submit" name="login" value="Login"/>
+	<br></br>
+	<input type="button" name="signup" onclick="signup()"/>
 	
 </form>
 </div>
