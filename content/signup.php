@@ -37,11 +37,10 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="pass"/>
 	<br></br>
 	
-	<input type="submit" name="login" value="Login"/>
+	<input type="submit" name="signup" value="Sign up"/>
 	<br></br>
 	
 </form>
-<input type="submit" name="signup" value="Sign up"  onclick="location.href='signup.php';"/>
 </div>
 </div>
 </div>
