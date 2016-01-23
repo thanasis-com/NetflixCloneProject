@@ -15,7 +15,7 @@
 <div id="center">
 
 <h2>Sign up for NetflixCloneProject</h2><br></br>
-<form action="checksignup.php" method="post">
+<form action="checksignup2.php" method="post">
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name"/>
 	<br></br>
 	
