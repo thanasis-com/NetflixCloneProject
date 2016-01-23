@@ -29,9 +29,9 @@ function signup()
 	
 	<input type="submit" name="login" value="Login"/>
 	<br></br>
-	<input type="submit" name="signup" value="Sign up"  onclick="location.href='signup.php';"/>
 	
 </form>
+<input type="submit" name="signup" value="Sign up"  onclick="location.href='signup.php';"/>
 </div>
 </div>
 </div>
