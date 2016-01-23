@@ -7,7 +7,7 @@ $pass=$_POST['password'];
 $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
-echo $pass;
+echo 'password: '.$_POST['password'];
 $hostname="172.17.0.2";
 $database="netflixcloneproject";
 $username="root";
