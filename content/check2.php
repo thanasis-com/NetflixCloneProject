@@ -18,33 +18,33 @@ $pass = $_POST['pass'];
 $link=mysql_connect($hostname, $username, $password) or
 	die ("An error occured while connecting to the server!" .mysql_error());
 	
-mysql_select_db($database,$link);
 
-$Qcheck_user="SELECT * FROM users WHERE email='$user' AND password='$pass'";
 
-$check_user=mysql_query($Qcheck_user, $link)or
-	die("There was an error:".mysql_error());
-	
-$number=mysql_num_rows($check_user);
+$sql="SELECT * FROM users WHERE email=:user AND password=:pass";
 
-$query="SELECT * FROM users";
+$stmt = mysql_select_db($database,$link)->prepare($sql);
+$stmt->execute(array(
+    ":user" => $user,
+    ":pass" => $pass
+));
 
-$results = mysql_query($query);
+$row = $stmt->fetch();
 
-if($number==0)
+
+if(mysql_num_rows($row)==0)
 {
 	header("location:login.php");
 }
 else
 {
-	$user=mysql_fetch_array($check_user);
+
 	
-	$role=$user["role"];
+	$role=$row["role"];
 	
-	$_SESSION['role'] = $user['role'];
-	$_SESSION['email'] = $user['email'];
-	$_SESSION['name'] = $user['name'];
-	$_SESSION['surname'] = $user['surname'];
+	$_SESSION['role'] = $row['role'];
+	$_SESSION['email'] = $row['email'];
+	$_SESSION['name'] = $row['name'];
+	$_SESSION['surname'] = $row['surname'];
 	
 	header("Location:index.php");
 }
