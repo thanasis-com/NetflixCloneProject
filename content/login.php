@@ -5,7 +5,12 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Login</title>
 <link href="styles/style1.css" rel="stylesheet" type="text/css" />
-
+<script type="text/javascript">
+function signup()
+{
+	window.location="signup.php";
+}
+</script>
 </head>
 
 <body>
