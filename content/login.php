@@ -29,7 +29,7 @@ function signup()
 	
 	<input type="submit" name="login" value="Login"/>
 	<br></br>
-	<input type="button" name="signup" value="Sign up"  onclick="signup()"/>
+	<input type="button" name="signup" value="Sign up"  onclick="signup();"/>
 	
 </form>
 </div>
