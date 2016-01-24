@@ -13,7 +13,7 @@ $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
 $cursor = $collection->find();
-
+try{
 $likes=array();
 $labels=array();
 foreach ($cursor as $document) {
@@ -46,6 +46,8 @@ $p1->ShowBorder();
 $p1->SetColor('black');
 $p1->ExplodeSlice(1);
 $graph->Stroke();	
-	
+}catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
 	
 ?>
