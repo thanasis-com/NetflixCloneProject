@@ -20,7 +20,7 @@ foreach ($cursor as $document) {
 
 	if(in_array($document['genre'],$labels)
 	{
-		//$likes[array_search($document['genre'], $labels)]=$likes[array_search($document['genre'], $labels)]+$document['likes'];
+		$likes[array_search($document['genre'], $labels)]=2;//$likes[array_search($document['genre'], $labels)]+$document['likes'];
 	}
 	else
 	{
