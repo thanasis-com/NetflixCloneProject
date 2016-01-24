@@ -9,6 +9,11 @@ require_once ('/home/src/jpgraph.php');
 require_once ('/home/src/jpgraph_pie.php');
 require_once ('/home/src/jpgraph_pie3d.php');
 
+$connection = new Mongo("mongodb://172.17.0.3");
+$db = $connection->CATALOGUE;
+$collection = $db->movies;
+$cursor = $collection->find();
+
 $likes=array();
 $labels=array();
 foreach ($cursor as $document) {
