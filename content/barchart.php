@@ -21,7 +21,7 @@ foreach ($cursor as $document) {
 }
 
 // Size of graph
-$width=400;
+$width=600;
 $height=500;
 // Set the basic parameters of the graph
 $graph = new Graph($width,$height);
