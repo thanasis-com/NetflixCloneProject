@@ -17,19 +17,17 @@ $cursor = $collection->find();
 $likes=array();
 $labels=array();
 foreach ($cursor as $document) {
-	/*
+
 	if(in_array($document['genre'],$labels)
 	{
-		$likes[array_search($document['genre'], $labels)]=$likes[array_search($document['genre'], $labels)]+$document['likes'];
+		//$likes[array_search($document['genre'], $labels)]=$likes[array_search($document['genre'], $labels)]+$document['likes'];
 	}
 	else
 	{
 		array_push($labels,$document['genre']);
 		array_push($likes, $document['likes']);
 	}
-	**/
-	array_push($likes, $document['likes']);
-	array_push($labels, $document['title']);
+
 }
 
 // Create the Pie Graph. 
