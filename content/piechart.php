@@ -41,9 +41,8 @@ $graph->title->Set("Likes by video genre");
 
 // Create
 $p1 = new PiePlot3D($likes);
-$p2->SetLegends($labels);
+$p1->SetLegends($labels);
 $graph->Add($p1);
-$graph->Add($p2);
 
 $p1->ShowBorder();
 $p1->SetColor('black');
