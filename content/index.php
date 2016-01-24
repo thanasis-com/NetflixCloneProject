@@ -69,6 +69,7 @@ function logout(){
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="videos">
+		<?php include "welcomecontent.php"; ?>
 		<img src="barchart.php">
 		</div>
 		
