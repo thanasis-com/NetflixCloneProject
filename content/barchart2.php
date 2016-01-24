@@ -28,38 +28,34 @@ foreach ($cursor as $document) {
 	}
 }
 
-// Create the graph. These two calls are always required
-$graph = new Graph(600,400,'auto');
-$graph->SetScale("textlin");
-
-//$theme_class="DefaultTheme";
-//$graph->SetTheme(new $theme_class());
-
-// set major and minor tick positions manually
-$graph->yaxis->SetTickPositions(array(0,30,60,90,120,150), array(15,45,75,105,135));
-$graph->SetBox(false);
-
-//$graph->ygrid->SetColor('gray');
-$graph->ygrid->SetFill(false);
+// Size of graph
+$width=600;
+$height=500;
+// Set the basic parameters of the graph
+$graph = new Graph($width,$height);
+$graph->SetScale('textlin');
+$graph->SetFrame(false);
+$top = 60;
+$bottom = 30;
+$left = 120;
+$right = 30;
+$graph->Set90AndMargin($left,$right,$top,$bottom);
+// Nice shadow
+$graph->SetShadow();
 $graph->xaxis->SetTickLabels($labels);
-$graph->yaxis->HideLine(false);
-$graph->yaxis->HideTicks(false,false);
-
-// Create the bar plots
-$b1plot = new BarPlot($likes);
-
-// ...and add it to the graPH
-$graph->Add($b1plot);
-
-
-$b1plot->SetColor("white");
-$b1plot->SetFillGradient("#4B0082","white",GRAD_LEFT_REFLECTION);
-$b1plot->SetWidth(45);
-$graph->title->Set("Bar Gradient(Left reflection)");
-
-// Display the graph
+// Label align for X-axis
+$graph->xaxis->SetLabelAlign('right','center','right');
+// Label align for Y-axis
+$graph->yaxis->SetLabelAlign('center','bottom');
+// Titles
+$graph->title->Set('Likes per movie');
+// Create a bar pot
+$bplot = new BarPlot($likes);
+$bplot->SetFillColor('orange');
+$bplot->SetWidth(0.5);
+$bplot->SetYMin(0);
+ 
+$graph->Add($bplot);
+ 
 $graph->Stroke();
-
-
-
 ?>
