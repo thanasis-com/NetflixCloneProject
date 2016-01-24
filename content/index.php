@@ -75,6 +75,7 @@ function logout(){
 		<img src="barchart.php">
 		<br></br>
 		<p class="welcome2">These are the most popular video genres:</p>
+		<br></br>
 		<img src="piechart.php">
 		<br></br>
 		</div>
