@@ -23,7 +23,24 @@ foreach ($cursor as $document) {
 		array_push($likes, $document['likes']);
 	}
 }
-	
+
+// Create the Pie Graph. 
+$graph = new PieGraph(350,250);
+
+$theme_class= new VividTheme;
+$graph->SetTheme($theme_class);
+
+// Set A title for the plot
+$graph->title->Set("Likes by video genre");
+
+// Create
+$p1 = new PiePlot3D($data);
+$graph->Add($p1);
+
+$p1->ShowBorder();
+$p1->SetColor('black');
+$p1->ExplodeSlice(1);
+$graph->Stroke();	
 	
 	
 ?>
