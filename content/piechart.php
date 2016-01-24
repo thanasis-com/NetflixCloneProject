@@ -34,7 +34,7 @@ $graph->SetTheme($theme_class);
 $graph->title->Set("Likes by video genre");
 
 // Create
-$p1 = new PiePlot3D($data);
+$p1 = new PiePlot3D($likes);
 $graph->Add($p1);
 
 $p1->ShowBorder();
