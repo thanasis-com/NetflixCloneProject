@@ -31,7 +31,7 @@ foreach ($cursor as $document) {
 }
 
 // Create the Pie Graph. 
-$graph = new PieGraph(400,600);
+$graph = new PieGraph(600,400);
 
 $theme_class= new VividTheme;
 $graph->SetTheme($theme_class);
