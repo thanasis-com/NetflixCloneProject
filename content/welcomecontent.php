@@ -6,7 +6,7 @@ if(!isset($_SESSION['role']))
 	}
 echo '1';
 
-try{
+
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
@@ -49,7 +49,5 @@ $bplot->SetYMin(0);
 $graph->Add($bplot);
  
 $graph->Stroke();
-}catch (Exception $e) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
-}
+
 ?>
