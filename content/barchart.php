@@ -28,7 +28,7 @@ $graph = new Graph($width,$height);
 $graph->SetScale('textlin');
 $top = 60;
 $bottom = 30;
-$left = 80;
+$left = 180;
 $right = 30;
 $graph->Set90AndMargin($left,$right,$top,$bottom);
 // Nice shadow
