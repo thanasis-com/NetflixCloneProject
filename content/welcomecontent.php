@@ -4,8 +4,8 @@ if(!isset($_SESSION['role']))
 {
 	header("location:login.php");
 	}
-require_once('/home/jpgraph/src/jpgraph.php');
-require_once('/home/jpgraph/src/jpgraph_bar.php');
+require_once('/home/src/jpgraph.php');
+require_once('/home/src/jpgraph_bar.php');
 
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
