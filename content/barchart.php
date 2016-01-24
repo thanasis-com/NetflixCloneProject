@@ -21,14 +21,14 @@ foreach ($cursor as $document) {
 }
 
 // Size of graph
-$width=600;
+$width=500;
 $height=500;
 // Set the basic parameters of the graph
 $graph = new Graph($width,$height);
 $graph->SetScale('textlin');
 $top = 60;
 $bottom = 30;
-$left = 180;
+$left = 120;
 $right = 30;
 $graph->Set90AndMargin($left,$right,$top,$bottom);
 // Nice shadow
