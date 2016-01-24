@@ -48,7 +48,7 @@ $graph->xaxis->SetLabelAlign('right','center','right');
 // Label align for Y-axis
 $graph->yaxis->SetLabelAlign('center','bottom');
 // Titles
-$graph->title->Set('Likes per movie');
+//$graph->title->Set('Likes per movie');
 // Create a bar pot
 $bplot = new BarPlot($likes);
 $bplot->SetFillColor('orange');
