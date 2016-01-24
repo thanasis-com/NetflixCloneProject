@@ -70,7 +70,7 @@ function logout(){
 		<!-- #BeginEditable "content" -->
 		<div id="videos">
 		<p class="welcome1">Welcome to NetflixCloneProject!</p>
-		<p class="welcome2">Here is what other users liked: </p>
+		<p class="welcome2">Here is what our other users liked: </p>
 		<img src="barchart.php">
 		</div>
 		
