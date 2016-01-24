@@ -4,10 +4,8 @@ if(!isset($_SESSION['role']))
 {
 	header("location:login.php");
 	}
-echo '1';
-require_once("jpgraph/src/jpgraph.php");
-require_once("jpgraph/src/jpgraph_bar.php");
-echo '2';
+
+
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
@@ -50,5 +48,5 @@ $bplot->SetYMin(0);
 $graph->Add($bplot);
  
 $graph->Stroke();
-	
+
 ?>
