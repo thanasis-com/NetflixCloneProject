@@ -69,7 +69,7 @@ function logout(){
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="videos">
-		<img src="welcomecontent.php">
+		<img src="barchart.php">
 		</div>
 		
 		<!-- #EndEditable "content" --></div>
