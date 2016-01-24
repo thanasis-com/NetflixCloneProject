@@ -9,7 +9,7 @@ try{
 require_once("jpgraph/src/jpgraph.php");
 require_once("jpgraph/src/jpgraph_bar.php");
 }catch (Exception $e) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
+    echo '3';
 }
 echo '2';
 $connection = new Mongo("mongodb://172.17.0.3");
