@@ -38,6 +38,7 @@ $graph->SetTheme($theme_class);
 
 // Set A title for the plot
 $graph->title->Set("Likes by video genre");
+$graph->SetFrame(false);
 
 // Create
 $p1 = new PiePlot3D($likes);
