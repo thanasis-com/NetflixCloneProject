@@ -4,8 +4,8 @@ if(!isset($_SESSION['role']))
 {
 	header("location:login.php");
 	}
-require_once('/home/jpgraph/src/jpgraph.php');
-require_once('/home/jpgraph/src/jpgraph_bar.php');
+require_once('/home/src/jpgraph.php');
+require_once('/home/src/jpgraph_bar.php');
 
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
@@ -21,14 +21,15 @@ foreach ($cursor as $document) {
 }
 
 // Size of graph
-$width=400;
+$width=600;
 $height=500;
 // Set the basic parameters of the graph
 $graph = new Graph($width,$height);
 $graph->SetScale('textlin');
+$graph->SetFrame(false);
 $top = 60;
 $bottom = 30;
-$left = 80;
+$left = 120;
 $right = 30;
 $graph->Set90AndMargin($left,$right,$top,$bottom);
 // Nice shadow
@@ -39,7 +40,7 @@ $graph->xaxis->SetLabelAlign('right','center','right');
 // Label align for Y-axis
 $graph->yaxis->SetLabelAlign('center','bottom');
 // Titles
-$graph->title->Set('Likes per movie');
+//$graph->title->Set('Likes per movie');
 // Create a bar pot
 $bplot = new BarPlot($likes);
 $bplot->SetFillColor('orange');

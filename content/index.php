@@ -69,7 +69,15 @@ function logout(){
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="videos">
-		<?php include 'welcomecontent.php'; ?>
+		<p class="welcome1">Welcome to NetflixCloneProject!</p>
+		<br></br>
+		<p class="welcome2">These are our mostly liked videos:</p>
+		<img src="barchart.php">
+		<br></br>
+		<br></br>
+		<p class="welcome2">These are the most popular video genres:</p>
+		<img src="barchart2.php">
+		<br></br>
 		</div>
 		
 		<!-- #EndEditable "content" --></div>
