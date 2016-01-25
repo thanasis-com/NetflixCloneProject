@@ -72,17 +72,7 @@ function logout(){
 	<div id="content">
 		<!-- #BeginEditable "content" -->
 		<div id="videos">
-			<ul id="menu">
-    <li><a href="SOME_LINK">Some menu without sub-menu</a></li>
-    <li><a href="SOME_LINK2">Some menu without sub-menu 2 </a></li>
-    <li>Some menu WITH sub-menu
-        <ul>
-            <li><a href="SOME_LINK">Some sub-menu</a></li>
-            <li><a href="SOME_LINK">Some sub-menu 2</a></li>
-        </ul>
-    </li>
-    <li><a href="SOME_LINK3">Some menu without sub-menu 3</a></li>
-</ul>
+			
 		<p class="welcome1">Welcome to NetflixCloneProject!</p>
 		<br></br>
 		<p class="welcome2">These are our mostly liked videos:</p>
