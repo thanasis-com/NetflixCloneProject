@@ -7,6 +7,9 @@ $pass=$_POST['pass'];
 $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
+$animated=$_POST['animated'];
+$documentary=$_POST['documentary'];
+$music=$_POST['music'];
 
 $hostname="172.17.0.2";
 $database="netflixcloneproject";
@@ -19,8 +22,8 @@ if ($conn->connect_error) {
 } 
 
 
-$sql = "INSERT INTO users (name, surname, email, password, age, country, role)
-VALUES ('$name', '$surname', '$email', '$pass', '$age', '$country', '$role')";
+$sql = "INSERT INTO users (name, surname, email, password, age, country, role, animated, documentary, music)
+VALUES ('$name', '$surname', '$email', '$pass', '$age', '$country', '$role', '$animated', '$documentary', '$music')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
