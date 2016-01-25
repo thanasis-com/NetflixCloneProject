@@ -37,6 +37,9 @@
 
 	Subscription type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard<input type="radio" name="role" value="standard"> Prime<input type="radio" name="role" value="prime">
 	<br></br>
+	<input type="checkbox" name="animated">I like animated videos.<br>
+	<input type="checkbox" name="documentary">I like documentaries. 
+	<input type="checkbox" name="video">I like music videos. 
 	<br></br>
 	
 	<input type="submit" name="signup" value="Sign up"/>
