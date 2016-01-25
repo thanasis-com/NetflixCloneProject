@@ -10,7 +10,7 @@ $link=mysql_connect($hostname, $username, $password) or
 	
 echo $link;
 
-require("TagCloud.php");
+require_once("TagCloud.php");
 $cloud = new TagCloud();
 $cloud->addTag("tag-cloud");
 $cloud->addTag("programming");
