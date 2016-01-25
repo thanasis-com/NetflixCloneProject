@@ -5,7 +5,7 @@ function fetchcomments($id){
 	$collection = $db->movies;
 	$cursor = $collection->find();
 	foreach ($cursor as $document) {
-		echo '<li><a href="#">Calvin</a></li>';
+		echo '1';
 	}
 
 
