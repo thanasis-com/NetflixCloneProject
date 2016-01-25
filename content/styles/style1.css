@@ -177,7 +177,4 @@ a:hover {
     	border:0;
 }
 
-ul>li>ul{display:none}
-ul>li:hover>ul, ul>li:selected>ul{display:block}
-
 }
