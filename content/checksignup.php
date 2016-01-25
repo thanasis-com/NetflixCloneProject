@@ -7,9 +7,30 @@ $pass=$_POST['pass'];
 $age=$_POST['age'];
 $country=$_POST['country'];
 $role=$_POST['role'];
-$animated=$_POST['animated'];
-$documentary=$_POST['documentary'];
-$music=$_POST['music'];
+if($_POST['animated']==true)
+{
+    $animated=1;
+}
+else
+{
+    $animated=0;
+}
+if($_POST['documentary']==true)
+{
+    $documentary=1;
+}
+else
+{
+    $documentary=0;
+}
+if($_POST['music']==true)
+{
+    $music=1;
+}
+else
+{
+    $music=0;
+}
 
 $hostname="172.17.0.2";
 $database="netflixcloneproject";
