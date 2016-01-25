@@ -5,8 +5,6 @@ if(!isset($_SESSION['role']))
 	header("location:login.php");
 	}
 	
-include 'fetchcomments.php';
-	
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
