@@ -5,7 +5,7 @@ if(!isset($_SESSION['role']))
 	header("location:login.php");
 	}
 	
-$connection = new Mongo("mongodb://172.17.0.7");
+$connection = new Mongo("mongodb://172.17.0.7:27000");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
 $cursor = $collection->find();
