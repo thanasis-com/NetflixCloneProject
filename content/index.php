@@ -75,7 +75,7 @@ function logout(){
 			
 		<p class="welcome1">Welcome to NetflixCloneProject!</p>
 		<br></br>
-		<p class="welcome2"></p>Here are some videos we believe you will like:</p>
+		<p class="welcome2">Here are some videos we think you will like:</p>
 		<br></br>
 		<?php include 'fetchRecvideos.php'; ?>
 		</div>
