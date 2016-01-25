@@ -12,7 +12,7 @@ if(!isset($_SESSION['role']))
 
 <head>
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- #BeginEditable "doctitle" -->
 <title>Home</title>
 <!-- #EndEditable -->
