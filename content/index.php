@@ -62,6 +62,8 @@ function logout(){
 			<li><a href="music.php">Music videos</a></li>
 		</ul>
 	<hr>
+	<a href="userspreferences.php">Users' preferences</a>
+	<hr>
 	<?php include 'logininfo.php'; ?>
 	</div>
 	<!-- End Navigation -->
