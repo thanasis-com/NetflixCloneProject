@@ -24,7 +24,8 @@ if($_SESSION['animated']==1)
 }
 if($_SESSION['music']==1)
 {
-  $cursor = $collection->find({"genre":"music"}).sort({"likes": -1}).limit(1);
+  $cursor = $collection->find(array('genre' => "music"));
+  $cursor->sort(array('likes' => -1))->limit(1);
   foreach ($cursor as $document) {
     if($document["visibility"]==$_SESSION['role'] || $_SESSION['role']=="prime" || $_SESSION['role']=="admin"){
 		
@@ -35,7 +36,8 @@ if($_SESSION['music']==1)
 }
 if($_SESSION['documentary']==1)
 {
-  $cursor = $collection->find({"genre":"documentary"}).sort({"likes": -1}).limit(1);
+  $cursor = $collection->find(array('genre' => "documentary"));
+  $cursor->sort(array('likes' => -1))->limit(1);
   foreach ($cursor as $document) {
     if($document["visibility"]==$_SESSION['role'] || $_SESSION['role']=="prime" || $_SESSION['role']=="admin"){
 		
