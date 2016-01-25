@@ -12,7 +12,11 @@ echo $link;
 
 require_once('TagCloud.php');
 echo '1';
+try{
 $cloud = new TagCloud();
+}catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+} 
 echo '2';
 $cloud->addTag("tag-cloud");
 echo '3';
