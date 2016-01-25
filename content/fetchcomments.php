@@ -1,5 +1,5 @@
 <?php
-function fetchcomments($id){
+
 	$connection = new Mongo("mongodb://172.17.0.3");
 	$db = $connection->CATALOGUE;
 	$collection = $db->movies;
@@ -7,7 +7,7 @@ function fetchcomments($id){
 	foreach ($cursor as $document) {
 		echo '1';
 	}
-}
+
 
 
 ?>
