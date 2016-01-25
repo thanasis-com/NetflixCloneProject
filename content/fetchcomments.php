@@ -6,7 +6,7 @@ if(!isset($_SESSION['role']))
 	}
 	
 try{
-$connection = new Mongo("mongodb://172.17.0.7");
+$connection = new Mongo("mongodb://172.17.0.7:27017");
 $db = $connection->COMMENTS;
 $collection = $db->comments;
 $cursor = $collection->find();
