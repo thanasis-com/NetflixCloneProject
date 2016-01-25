@@ -48,6 +48,9 @@ else
 	$_SESSION['email'] = $user['email'];
 	$_SESSION['name'] = $user['name'];
 	$_SESSION['surname'] = $user['surname'];
+	$_SESSION['animated'] = $user['animated'];
+	$_SESSION['documentary'] = $user['documentary'];
+	$_SESSION['music'] = $user['music'];
 	
 	header("Location:index.php");
 }
