@@ -7,6 +7,7 @@ function fetchcomments($id){
 	foreach ($cursor as $document) {
 		echo '1';
 	}
+}
 
 
 ?>
