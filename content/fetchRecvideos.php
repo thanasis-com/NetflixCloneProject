@@ -8,7 +8,7 @@ if(!isset($_SESSION['role']))
 $connection = new Mongo("mongodb://172.17.0.3");
 $db = $connection->CATALOGUE;
 $collection = $db->movies;
-
+echo '2';
 if($_SESSION['animated']==1)
 {
   $max=-1;
@@ -45,5 +45,5 @@ if($_SESSION['documentary']==1)
     }
    }
 }
-
+echo '4';
 ?>
