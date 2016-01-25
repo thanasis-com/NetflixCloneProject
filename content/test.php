@@ -11,9 +11,14 @@ $link=mysql_connect($hostname, $username, $password) or
 echo $link;
 
 require_once("TagCloud.php");
+echo '1';
 $cloud = new TagCloud();
+echo '2';
 $cloud->addTag("tag-cloud");
+echo '3';
 $cloud->addTag("programming");
+echo '4';
 echo $cloud->render();
+echo '5';
 	
 	?>
